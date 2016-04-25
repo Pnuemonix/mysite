@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p> FUCK YOU! </p>
+
+    <ul>
+    {% for skill in skills %}
+        <li>{{ skill.description }}</a></li>
+    {% endfor %}
+    </ul>
+		
+{% endblock %}
+
+<!-- 
+title = models.CharField(max_length=120, unique=True, blank=False)
+	description = models.CharField(max_length=120)
+	skill_type = models.CharField(max_length=120, choices=SKILL_TYPE)
+	level -->
+
+
+<!-- 	<a href="{% url 'myCV:skill' skill.title %}">{{ skill.description }}</a> -->
